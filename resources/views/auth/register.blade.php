@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('form')
+@if(setting('registration'))
 <section class="login_content">
     <form action="{{ route('register') }}" method="post">
       <h1>{{ __('lg.accountsignup') }}</h1>
@@ -38,4 +39,11 @@
       </div>
     </form>
   </section>
+  @else
+  <div class="row text-center">
+    <h2><i class="fa fa-ban fa-3x"></i></h2>
+    <h3>{{ __('lg.regdisabled') }}</h3>
+    <p>{{ __('lg.regdisabledmsg') }}</p>
+  </div>
+  @endif
 @endsection

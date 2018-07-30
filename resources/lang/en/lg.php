@@ -68,5 +68,7 @@ return [
 	'resetpass' => 'Reset Password',
 	'alreadyhaveaccount' => 'Already have an account?',
 	'accountsignup' => 'Account Signup',
-	'backtologin' => 'Back to Login'
+	'backtologin' => 'Back to Login',
+	'regdisabled' => 'Registration Disabled',
+	'regdisabledmsg' => 'Registration is currently disabled on this website by the administrators.'
 ];
